@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><b>Contacter le  numéro 1 en resaux Marocain PRC</b></title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,600);
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700);
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 40px;
+      background-color: transparent;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .logo-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #333 0%, #000 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4CAF50;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .logo::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, transparent 30%, rgba(76, 175, 80, 0.1) 70%);
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    
+    .logo:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+    
+    .logo:hover::after {
+      opacity: 1;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(0.8);
+        opacity: 0.7;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(0.8);
+        opacity: 0.7;
+      }
+    }
+    
+    .logo img {
+      max-width: 100%;
+      max-height: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+    .logo:hover img {
+      transform: scale(1.1);
+    }
+    
+    .content {
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Montserrat, sans-serif;
+      color: #333;
+      margin-top: 30px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    h1::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, #4CAF50, #2196F3);
+    }
+
+    .accordion {
+      width: 100%;
+      max-width: 1080px;
+      height: 250px;
+      overflow: hidden;
+      margin: 50px auto;
+    }
+
+    .accordion ul {
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    .accordion ul li {
+      display: table-cell;
+      vertical-align: bottom;
+      position: relative;
+      width: 16.666%;
+      height: 250px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      transition: all 500ms ease;
+    }
+
+    .accordion ul li div {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .accordion ul li div a {
+      display: block;
+      height: 250px;
+      width: 100%;
+      position: relative;
+      z-index: 3;
+
+      padding: 15px 20px;
+      box-sizing: border-box;
+      color: #fff;
+      text-decoration: none;
+      font-family: Open Sans, sans-serif;
+      transition: all 200ms ease;
+    }
+
+    .accordion ul li div a * {
+      opacity: 0;
+      margin: 0;
+      width: 100%;
+      text-overflow: ellipsis;
+      position: relative;
+      z-index: 5;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateX(-20px);
+      transition: all 400ms ease;
+    }
+
+    .accordion ul li div a h2 {
+      font-family: Montserrat, sans-serif;
+      text-overflow: clip;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      top: 160px;
+    }
+
+    .accordion ul li div a p {
+      top: 160px;
+      font-size: 13.5px;
+    }
+
+    /* Placeholder backgrounds - replace with your own */
+    .accordion ul li:nth-child(1) { background-image: url('https://th.bing.com/th/id/OIP.e1NF9Q7RrhtcQIWIMwjO5AHaEY?w=252&h=180&c=7&r=0&o=5&pid=1.7'); }
+    .accordion ul li:nth-child(2) { background-image: url('https://th.bing.com/th/id/OIP.0sRkWeEHuxSNssbzaaN1pwHaE8?w=240&h=180&c=7&r=0&o=5&pid=1.7'); }
+    .accordion ul li:nth-child(3) { background-image: url('https://th.bing.com/th/id/OIP.MgBtYsDqBUpYsnwXELBs5AHaER?w=307&h=180&c=7&r=0&o=5&pid=1.7'); }
+    .accordion ul li:nth-child(4) { background-image: url('https://th.bing.com/th/id/R.da28205103708328a854dd785f7d84da?rik=1IBXtmHHJl%2fVcQ&pid=ImgRaw&r=0'); }
+    .accordion ul li:nth-child(5) { background-image: url('https://www.tooloutil.com/wp-content/uploads/2023/03/maintenance-2-1200x720-1140x684.jpeg'); }
+    .accordion ul li:nth-child(6) { background-image: url('https://th.bing.com/th/id/OIP.vIdwxhnMYm-Sq3oGrzoJhwHaE8?w=223&h=180&c=7&r=0&o=5&pid=1.7'); }
+
+    .accordion ul:hover li,
+    .accordion ul:focus-within li {
+      width: 8%;
+    }
+
+    .accordion ul li:focus {
+      outline: none;
+    }
+
+    .accordion ul:hover li:hover,
+    .accordion ul li:focus,
+    .accordion ul:focus-within li:focus {
+      width: 60%;
+    }
+
+    .accordion ul:hover li:hover a,
+    .accordion ul li:focus a,
+    .accordion ul:focus-within li:focus a {
+      background: rgba(0,0,0,.4);
+    }
+
+    .accordion ul:hover li:hover a *,
+    .accordion ul li:focus a *,
+    .accordion ul:focus-within li:focus a * {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .accordion ul:hover li {
+      width: 8% !important;
+    }
+
+    .accordion ul:hover li a * {
+      opacity: 0 !important;
+    }
+
+    .accordion ul:hover li:hover {
+      width: 60% !important;
+    }
+
+    .accordion ul:hover li:hover a {
+      background: rgba(0,0,0,.4);
+    }
+
+    .accordion ul:hover li:hover a * {
+      opacity: 1 !important;
+      transform: translateX(0);
+    }
+
+    /* Contact Form Styles - NOUVEAU STYLE */
+    .contact-form {
+      max-width: 600px;
+      margin: 50px auto;
+      background: rgb(255, 255, 255);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+      background-image: url('https://th.bing.com/th/id/OIP.4DYnJbhBkgJDnL783kjKEAHaNK?w=182&h=323&c=7&r=0&o=5&pid=1.7');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-blend-mode: overlay;
+      background-color: rgba(255, 255, 255, 0.92);
+      z-index: 1;
+    }
+
+    .contact-form::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://th.bing.com/th/id/OIP.nqNdQ2XlT1b0JUmPTJmLIQHaFj?rs=1&pid=ImgDetMain');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      z-index: -1;
+      border-radius: 10px;
+      filter: grayscale(30%);
+    }
+
+    .contact-form:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      font-family: Montserrat, sans-serif;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .contact-form h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, #91ff00, #48ff00);
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #2c3e50;
+      transition: color 0.3s;
+    }
+
+    .form-group:focus-within label {
+      color: #3498db;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      transition: all 0.3s;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #3498db;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+      background-color: white;
+    }
+
+    .form-group textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    .name-row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .name-row .form-group {
+      flex: 1;
+    }
+
+    .file-upload {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .file-upload-label {
+      display: flex;
+      align-items: center;
+      padding: 12px 15px;
+      background-color: rgba(248, 249, 250, 0.9);
+      border: 1px dashed #ccc;
+      border-radius: 5px;
+      color: #555;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+
+    .file-upload-label:hover {
+      background-color: #e9ecef;
+      border-color: #aaa;
+    }
+
+    .file-upload input[type="file"] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .file-name {
+      margin-left: 10px;
+      font-size: 14px;
+      color: #3498db;
+    }
+
+    .icon {
+      margin-right: 10px;
+      color: #7f8c8d;
+    }
+
+    .submit-btn {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .submit-btn:hover {
+      background: linear-gradient(135deg, #2980b9, #3498db);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .submit-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .submit-btn::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: rgba(72, 255, 0, 0.5);
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(1, 1) translate(-50%);
+      transform-origin: 50% 50%;
+    }
+
+    .submit-btn:focus::after {
+      animation: ripple 1s ease-out;
+    }
+
+    @keyframes ripple {
+      0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(20, 20);
+        opacity: 0;
+      }
+    }
+
+    .submit-group {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .error-message {
+      color: #e74c3c;
+      font-size: 12px;
+      margin-top: 5px;
+      display: none;
+    }
+
+    .form-message {
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      animation: fadeIn 0.5s;
+      transition: opacity 0.5s;
+    }
+
+    .form-message.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .form-message.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+      margin-right: 8px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* NOUVEAU - INFORMATIONS DE LA PLATEFORME ET ADRESSE */
+    .platform-info {
+      max-width: 1000px;
+      margin: 60px auto 40px;
+      padding: 40px 25px;
+      text-align: center;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeUp 1s forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .platform-info h3 {
+      font-family: Montserrat, sans-serif;
+      color: #2c3e50;
+      margin-bottom: 25px;
+      font-size: 28px;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 12px;
+    }
+
+    .platform-info h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #4CAF50, transparent);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .info-card {
+      padding: 25px;
+      transition: all 0.3s;
+      border-bottom: 3px solid transparent;
+    }
+
+    .info-card:nth-child(1) {
+      border-bottom-color: #3498db;
+    }
+
+    .info-card:nth-child(2) {
+      border-bottom-color: #4CAF50;
+    }
+
+    .info-card:nth-child(3) {
+      border-bottom-color: #e74c3c;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .info-card h4 {
+      font-family: Montserrat, sans-serif;
+      color: #2c3e50;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .info-card p {
+      color: #555;
+      font-size: 16px;
+      margin: 0 0 8px 0;
+      line-height: 1.5;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #f8f9fa;
+      color: #555;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-size: 22px;
+    }
+
+    .social-link:hover {
+      background-color: #3498db;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    .about {
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      color: #666;
+      margin-top: 20px;
+      padding: 10px;
+    }
+
+    .about a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .about a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+      color: #000000;
+      padding: 40px 20px;
+      margin-top: 50px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .footer-section h3 {
+      color: #fff;
+      font-family: Montserrat, sans-serif;
+      font-size: 18px;
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-section h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      background: #4CAF50;
+    }
+
+    .footer-section p {
+      margin-bottom: 10px;
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section ul li a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: #4CAF50;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      .accordion {
+        height: auto;
+      }
+
+      .accordion ul, .accordion ul:hover {
+        display: block;
+      }
+
+      .accordion ul li, 
+      .accordion ul:hover li,
+      .accordion ul:hover li:hover {
+        position: relative;
+        display: block;
+        width: 100% !important;
+        margin-bottom: 10px;
+      }
+
+      .accordion ul li div a * {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+      }
+
+      .accordion ul li div a {
+        background: rgba(0,0,0,0.4);
+      }
+
+      .contact-form, .platform-info {
+        padding: 20px;
+        margin: 20px;
+      }
+      
+      .header {
+        padding: 15px;
+      }
+      
+      .logo {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+      }
+
+      .name-row {
+        flex-direction: column;
+        gap: 0;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+      }
+      
+      .footer-section {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <div class="logo">
+        <!-- You can replace this text with an actual logo image -->
+        <!-- <img src="your-logo.png" alt="Company Logo"> -->
+       <b>PRC</b> 
+      </div>
+    </div>
+  </div>
+  
+  <div class="content">
+    <h1><b>PROJET RÉSEAUX CONFIGURATION</b></h1>
+  
+    <div class="accordion">
+      <ul>
+        <li tabindex="1">
+          <div>
+            <a href="#">
+              <h2>Configuration</h2>
+              <p>Services de configuration réseau professionnels</p>
+            </a>
+          </div>
+        </li>
+        <li tabindex="2">
+          <div>
+            <a href="#">
+              <h2>Installation</h2>
+              <p>Installation et mise en place d'infrastructures</p>
+            </a>
+          </div>
+        </li>
+        <li tabindex="3">
+          <div>
+            <a href="#">
+              <h2>Sécurité</h2>
+              <p>Solutions de sécurité pour votre entreprise</p>
+            </a>
+          </div>
+        </li>
+        <li tabindex="4">
+          <div>
+            <a href="#">
+              <h2>Maintenance</h2>
+              <p>Services de maintenance et assistance technique</p>
+            </a>
+          </div>
+        </li>
+        <li tabindex="5">
+          <div>
+            <a href="#">
+              <h2>Consultation</h2>
+              <p>Expertise et conseil en solutions réseau</p>
+            </a>
+          </div>
+        </li>
+        <li tabindex="6">
+          <div>
+            <a href="#">
+              <h2>Formation</h2>
+              <p>Formation professionnelle pour vos équipes</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- FORMULAIRE DE CONTACT -->
+    <div class="contact-form">
+  <h2>Contactez-nous</h2>
+  <div id="formMessage" class="form-message" style="display: none;"></div>
+
+
+
+<form action="https://usebasin.com/f/574585024aa1" method="POST" enctype="multipart/form-data" id="form" >
+
+
+    <div class="name-row">
+      <div class="form-group">
+        <label for="firstname">Prénom*</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <div class="error-message" id="firstnameError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Nom*</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <div class="error-message" id="lastnameError"></div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+      <div class="error-message" id="emailError"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" required></textarea>
+      <div class="error-message" id="messageError"></div>
+    </div>
+
+    <div class="form-group">
+      <label>Pièce jointe</label>
+      <div class="file-upload">
+        <label for="file" class="file-upload-label">
+          <span class="icon">📎</span>
+          <span>Choisir Voter Topologie</span>
+          <span id="fileName" class="file-name"></span>
+        </label>
+        <input type="file" id="file" name="file">
+      </div>
+    </div>
+
+    <div class="submit-group">
+      <button type="submit" id="submitButton" class="submit-btn">Envoyer</button>
+    </div>
+  </form>
+</div>
+
+
+    <!-- NOUVEAU - INFORMATIONS DE LA PLATEFORME ET ADRESSE -->
+    <div class="platform-info">
+      <h3>Notre Entreprise</h3>
+      <p>Experts en solutions réseaux depuis plus de 2 ans, nous concevons, installons et maintenons des infrastructures informatiques performantes et sécurisées, adaptées aux besoins spécifiques de votre entreprise. Notre équipe de professionnels certifiés vous accompagne dans tous vos projets réseau.</p>
+      
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>Adresse</h4>
+          <p>120 Rue Abiderlghafari , Hay Tarik</p>
+          <p>Casablanca,Sidi bernoussi </p>
+          <p>Bâtiment A, 3ème étage</p>
+        </div>
+        
+        <div class="info-card">
+          <h4>Contact</h4>
+          <p>Email: contact@reseauxconfig.fr</p>
+          <p>Téléphone: 06 12 65 60 42</p>
+          <p>Fax: +05 23 45 67 90</p>
+        </div>
+        
+        <div class="info-card">
+          <h4>Horaires</h4>
+          <p>Lundi - Vendredi: 9h - 18h</p>
+          <p>Samedi: 10h - 15h</p>
+          <p>Dimanche: Fermé</p>
+        </div>
+      </div>
+      
+      <div class="social-links">
+        <a href="#" class="social-link">𝕏</a>
+        <a href="#" class="social-link">ƒ</a>
+        <a href="#" class="social-link">𝕀</a>
+        <a href="#" class="social-link">𝕃</a>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- NOUVEAU - FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>À propos de nous</h3>
+        <p>Notre entreprise est spécialisée dans la configuration et l'installation de réseaux professionnels. Nous offrons des solutions complètes adaptées à vos besoins.</p>
+        <p>Depuis plus de 2 ans, nous nous engag</p>
